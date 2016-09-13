@@ -12,5 +12,5 @@
 1. Open the script editor
 2. Go to 'Resources > Libraries'
 3. Enter project key (MxL38OxqIK-B73jyDTvCe-OBao7QLBR4j) in the 'Find the Library' field. Click 'Select'
-4. Select most recent version and choose Qunit as the identifier (Do not use Development Mode)
-5. Click Save
+4. Select most recent version, choose QUnit as the identifier (Do not use Development Mode), then click 'Save'
+5. All available functions show by typing QUnit followed by a dot. Alternatively, read the [API docts](https://script.google.com/macros/library/versions/d/MxL38OxqIK-B73jyDTvCe-OBao7QLBR4j)
