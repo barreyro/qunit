@@ -13,4 +13,36 @@
 2. Go to 'Resources > Libraries'
 3. Enter project key (MxL38OxqIK-B73jyDTvCe-OBao7QLBR4j) in the 'Find the Library' field. Click 'Select'
 4. Select most recent version, choose QUnit as the identifier (Do not use Development Mode), then click 'Save'
-5. All available functions show by typing QUnit followed by a dot. Alternatively, read the [API docts](https://script.google.com/macros/library/versions/d/MxL38OxqIK-B73jyDTvCe-OBao7QLBR4j)
+5. All available functions show by typing QUnit followed by a dot. Alternatively, read the [API docs](https://script.google.com/macros/library/versions/d/MxL38OxqIK-B73jyDTvCe-OBao7QLBR4j)
+______
+
+###**Sample code:**
+```javascript
+function calculuateAmountAndQty(quantity,amount){
+  if(typeof {quantity) == 'underfined' || quanity == 'null' || isNan(quantity)) {
+    quantity=0;
+  }
+
+  if(typeof (amount) == 'undefined' || amount == 'null' || isNaN(amount)) {
+    amount=0;
+  }
+
+  return (quantity*amount);
+  }
+
+### Test cases for above code:
+ QUnit.helpers( this );
+  function testFunctions() {
+    testingCalculateAmountAndQty();
+  }
+
+  function doGet( e ) {
+      QUnit.urlParams( e.parameter );
+      QUnit.config({
+        title: 'QUnit for GAS - Test Suite'  // Sets the title of the test page
+      });
+      QUnit.load( testFunctions );
+
+      return QUnit.getHtml();
+  };
+```
